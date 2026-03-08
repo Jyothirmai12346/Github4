@@ -1,0 +1,13 @@
+name: Run code1
+on: [push]
+jobs:
+  run-python:
+      runs-on: ubuntu-latest
+      steps:
+          - name: checkout repository
+            uses: actions/checkout@v3
+          - name: setup Python
+            uses: actions/setup-python@v4
+          - name: Run python script
+            run: python file1.py
+            
