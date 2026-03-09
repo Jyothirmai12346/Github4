@@ -1,13 +1,13 @@
 import requests
-url= "https://api.github.com/orgs/microsoft/repos"
-response=requests.get(url)
-repos=response.json()
-print(" Microsoft open source repositories")
+api_url="https://api.github.com/orgs/google/repos"
+res=requests.get(api_url)
+repos=res.json()
+print("Google open source repositories")
 for repo in repos:
   name = repo["name"]
   description = repo["description"]
   url = repo["url"]
-  print("Repository name :",name)
-  print("Description:",description)
-  print("url:",url)
-  print("/" * 10)
+print("Repository name:",name)
+print("Description:",description)
+print("Url:",url)
+print("/" * 10)
