@@ -2,8 +2,8 @@ name: Tem
 on:
   workflow_dispatch:
     inputs:
-      cel:
-        description: "Enter temperature in cel"
+      celsius:
+        description: "Enter temperature in celsius"
         required: true
         default: "25"
 jobs:
