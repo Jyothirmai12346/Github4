@@ -15,4 +15,4 @@ jobs:
         - name: setup Python
           uses: actions/setup-python@v4
         - name: Run python script
-          run: python egf.py 25 ${{github.event.inputs.celsius}}
+          run: python egf.py  ${{github.event.inputs.celsius}}
