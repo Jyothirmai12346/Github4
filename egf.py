@@ -1,4 +1,4 @@
 import sys
-cel=float(sys.argv[1])
-fah=(cel*9/5)+32
+celsius=float(sys.argv[1])
+fah=(celsius*9/5)+32
 print("tem in fahrenheit:",fah)
